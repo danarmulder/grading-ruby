@@ -8,7 +8,7 @@ def grade_diff(grades)
   grades.map do |person, grade_list|
     differences[person] = difference(grade_list)
   end
-  differences
+   differences
 end
 
 def difference(array)
@@ -36,7 +36,7 @@ def decline(grades)
     difference_list.each do |diff|
       if diff == :up
         i = 0
-      else
+      else diff == :down
         i += 1
       end
     end
